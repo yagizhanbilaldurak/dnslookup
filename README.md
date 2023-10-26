@@ -4,12 +4,12 @@ The dnslookup package provides tools to retrieve DNS records of a given domain.
 
 It has mutex feature in each method so that it prevents problems that may occur related to concurrency.
 
-# Installation
+## Installation
 Install using the “go get” command:
 ```bash
 go get -u github.com/yagizhanbilaldurak/dnslookup
 ```
-# Usage
+## Usage
 Create a new instance with NewDnsRecord :
 ```go
 domain := "example.com"
@@ -40,7 +40,7 @@ newrecord.GetAllRecords()
 //it will return a structured map with string keys and interface{} values.
 //The returned map, contains DNS records organized by their record types as keys.
 ```
-# Example Program
+## Example Program
 With this program, dnslookup package can be used with parameters.
 ```go
 package main
@@ -108,7 +108,7 @@ func isValidSearchType(searchType string) bool {
 
 }
 ```
-# Usage
+## Usage
 Firstly, program must be built:
 ```bash
 go build main.go
